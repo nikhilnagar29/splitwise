@@ -1,0 +1,33 @@
+/**
+ * src/app/globals.css
+ * Minimal base styles — just enough to make the app readable.
+ * No design system yet; that comes in a later pass.
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-geist-sans, sans-serif);
+  background: #f5f5f5;
+  color: #111;
+  line-height: 1.5;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+button {
+  cursor: pointer;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}

@@ -1,0 +1,246 @@
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* ── Back + header ── */
+.backBtn {
+  background: none;
+  border: none;
+  color: #0070f3;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.backBtn:hover { text-decoration: underline; }
+
+.groupName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* ── Sections ── */
+.section {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid #eee;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+/* ── Members ── */
+.memberList { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+
+.memberRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.memberName { flex: 1; font-size: 0.95rem; }
+.memberRole {
+  font-size: 0.78rem;
+  color: #fff;
+  background: #555;
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+}
+.memberRole.admin { background: #0070f3; }
+
+.removeBtn {
+  background: none;
+  border: 1px solid #e00;
+  color: #e00;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* ── Add member ── */
+.addMemberForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inlineInput {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+.inlineInput:focus { border-color: #0070f3; }
+
+.primaryBtn {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.primaryBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.secondaryBtn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* ── Expenses ── */
+.expenseList { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.expenseCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+.expenseCard:hover { border-color: #0070f3; }
+
+.expDesc { font-weight: 600; font-size: 0.95rem; }
+.expMeta { font-size: 0.82rem; color: #666; margin-top: 0.1rem; }
+.expAmount { font-weight: 700; font-size: 1rem; color: #111; }
+
+/* ── Add expense form ── */
+.addExpenseForm {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.formRow label { font-size: 0.85rem; font-weight: 500; color: #444; }
+
+.formRow input,
+.formRow select {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  background: #fff;
+}
+.formRow input:focus,
+.formRow select:focus { border-color: #0070f3; }
+
+.checkboxGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+}
+
+.valuesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.valueRow span { min-width: 90px; }
+
+.valueInput {
+  width: 90px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.88rem;
+}
+
+.formActions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+/* ── Balances ── */
+.balanceList { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.balanceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+}
+
+.balanceText { font-size: 0.95rem; }
+.balanceName { font-weight: 600; }
+.balanceAmt { color: #c00; font-weight: 700; }
+
+.settleBtn {
+  background: #2a9d2a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.settleBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ── Shared states ── */
+.error {
+  color: #d00;
+  background: #fff0f0;
+  border: 1px solid #fcc;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+.empty { color: #888; font-size: 0.9rem; padding: 0.5rem 0; }
