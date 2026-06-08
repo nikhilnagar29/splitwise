@@ -4,3 +4,4 @@ python-jose[cryptography]
 passlib[bcrypt]
 pydantic[email]
 dotenv
+psycopg2-binary
